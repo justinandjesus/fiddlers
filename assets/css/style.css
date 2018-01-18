@@ -124,6 +124,7 @@ body.wwa .text-hold p {
 @media (max-width: 768px) {
   body.wwa .text-hold {
     width: 90%;
+    position: relative;
   }
 }
 
