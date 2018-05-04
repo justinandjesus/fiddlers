@@ -47,7 +47,7 @@ body header ul.navbar-nav li a {
 body section.image {
   position: relative;
   height: 100vh;
-  background: url("../img/bg.jpg") no-repeat;
+  background: url("../img/background.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -126,6 +126,22 @@ body.wwa .text-hold p {
     width: 90%;
     position: relative;
   }
+
+  body.archive div.video-link{
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+
+}
+
+@media (min-width: 426px) and (max-width: 1200px){
+  body.archive div.video-link{
+    margin-right: 20px;
+  }
+  body.archive .holder{
+    align-items: center;
+  }
 }
 
 @media (max-width: 425px) {
@@ -144,6 +160,8 @@ body.archive div.overarch {
 body.archive div.holder {
   width: 80%;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 body.archive div.poster {
@@ -151,4 +169,29 @@ body.archive div.poster {
   background-position: 50% 50% !important;
   background-repeat: no-repeat !important;
   height: 600px;
+  flex: 1;
+}
+
+body.archive div.video-link{
+  flex: 1;
+}
+
+body.archive .carousel-control{
+  background: transparent !important;
+}
+
+@media (max-width: 425px) {
+  body.archive div.poster {
+    height: 400px;
+  }
+  body.archive div.holder{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  body.archive div.video-link{
+    height: 500px;
+    margin-right: 20px;
+  }
 }
